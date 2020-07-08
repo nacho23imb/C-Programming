@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+// Global Variables
+
+#define  MAX_AGE 99
+unsigned int age;
+
+int main()
+{
+    // Local Variables
+    const char retirement = 55;
+    
+    
+    // Ask the user to enter his/her age
+    printf("Type your age:");
+    scanf("%d",&age);
+    if(age > MAX_AGE)
+    {
+        printf("error message.");
+    }else{
+        if(age < retirement)
+        {
+            printf("The number of years left to retire: %d.",retirement - age);
+        }else{
+            printf("Retirement age reached.");
+        }
+        
+    }
+}
